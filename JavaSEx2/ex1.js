@@ -2,7 +2,7 @@ function verificaVelocidade(){
 
     let velocidade = window.document.getElementById('velocidade');
     let valor = Number(velocidade.value);
-    let resultado = window.document.getElementById('resultado')
+    let resultado = window.document.getElementById('resultado');
        
     if (valor > 40 && valor < 100){
         console.log('Multado!')
