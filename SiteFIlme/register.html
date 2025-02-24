@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Elvi Films</title>
+</head>
+ 
+<body class="container">
+    <main class=" principal">
+        <form action="form.php" method="post">
+            <legend class="titulo">Dados Pessoais</legend>
+            <fieldset>
+                <!-- com-->
+                <div class="text" class="text">
+                    <label for="inome">Nome:</label>
+                    <input class="inputdados" type="text" name="nome" id="inome" required-malength="50"
+                        placeholder="Nome completo">
+                </div class="text">
+                <div class="text" class="text"></div>
+                    <label for="icpf">CPF:</label>
+                    <input class="inputdados" type="text" name="CPF" id="icpf" placeholder="CPF" min="11" max="11">
+                </div class="text">
+                <!-- idade-->
+                <Div class="text">
+                    <label for="iidadee=">Idade:</label>
+                    <input class="inputdados" type="number" name="idade" id="iidade" min="18" max="99"
+                        placeholder="18 a 99">
+                </Div>
+                <!-- emails-->
+                <Div class="text">
+                    <label for="iemail">E-mail</label>
+                    <input class="inputdados" type="email" id="iemail" placeholder="E-mail" autocomplete="email"
+                        required>
+                </Div>
+                <!--senha-->
+                <Div class="text">
+                    <label for="isenha">Senha</label>
+                    <input class="inputdados" type="password" id="isenha" placeholder="Senha" autocomplete="passw"
+                        required>
+                </Div>
+                <!-- telefone-->
+                <div class="text" class="text">
+                    <label for="itelefone">Telefone: </label>
+                    <input class="inputdados" type="tel" name="telefone" id="itelefone" autocomplete="tel"
+                        pattern="^\(\d{2}\)\d{4,5}\-\d{4}$" required placeholder="(xx)x xxxx-xxxx">
+                </div class="text">
+                <!-- generos-->
+                <div class="text">
+                    <label for="smasc">Masculino</label>
+                    <input type="radio" name="sexo" id="smasc" checked>
+ 
+                    <label for="sfem">Feminino</label>
+                    <input type="radio" name="sexo" id="sfem">
+            </fieldset>
+            </div class="text">
+ 
+            <!--Informacoes adicionais-->
+            <fieldset>
+                <legend class="titulo">Endereço</legend>
+                <div class="text">
+                    <label for="irua">Rua:</label>
+                    <input class="inputdados" type="text" name="rua" id="irua" placeholder="Ex: Av.Brasil, 95">
+                </div class="text">
+                <!---->
+                <div class="text">
+                    <label for="ibairro">Bairro:</label>
+                    <input type="text" name="bairro" id="ibairro" placeholder="Ex: Jardim Boa esperança"
+                        class="inputdados">
+                </div class="text">
+                <!--cep-->
+                <div class="text">
+                    <label for="icep">CEP:</label>
+                    <input type="number" name="cep" id="icep" required placeholder="xxxx-xxxx" class="inputdados">
+                </div class="text">
+                <!--cidade-->
+                <div class="text">
+                    <label for="icidade">Cidade:</label>
+                    <input class="inputdados" type="text" id="icidade" placeholder="Cidade">
+                </div class="text">
+            </fieldset>
+ 
+ 
+            <FIeldset class="lalalala">
+                <div class="text">
+ 
+                    <option class="titulo" value="" selected required="">--- Escolha ---</option>
+                    <select name="Estado" id="iestado">
+ 
+                        <optgroup label="Estado">
+                            <option value=" ">Selecione</option>
+                            <option value=" ">Bahia</option>
+                            <option value=" ">Minas Gerais</option>
+                            <option value=" ">Rio de Janeiro</option>
+                            <option value=" ">Santa Catarina</option>
+                            <option value=" ">São Paulo</option>
+                        </optgroup>
+ 
+ 
+                    </select>
+                </div class="text">
+            </FIeldset>
+            <br>
+            <div class="rodapeFormulario">
+                <input class="btn" type="submit" value="Enviar">
+                <input class="btn" type="Reset" value="Limpar">
+            </div class="text">
+    </main>
+    <div class="rodape">
+        <p>Todos os direitos reservados &copy; 2024</p>
+ 
+    </div >
+</body>
+ 
+</html>

@@ -1,0 +1,160 @@
+body {
+  background-color: #FFF8DC;
+}
+header{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+.navbar {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+.logo{
+  width: 125px;
+  height: 100px;
+
+}
+
+button {
+  font-size: 18px;
+  color: #47232C;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: #66997B;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #66997B;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.logo {
+  height: 140px;
+  display: inline-block;
+}
+
+.buttonDoacao {
+  position: fixed;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #66997B;
+  background-size: 400%;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  position: fixed;
+  top: 40px;
+  right: 70px;
+  padding: 10px 20px;
+}
+
+.buttonDoacao:hover::before {
+  transform: scaleX(1);
+}
+
+.buttonDoacao-content {
+  position: relative;
+  z-index: 1;
+}
+
+.buttonDoacao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(82.3deg,
+      #27081D 10.8%,
+      #47232C 94.3%);
+  transition: all 0.475s;
+}
+
+.img1 {
+  height: 100%;
+  display: flex;
+  margin-left: 20px;
+  width: 193vh;
+  height: 400px;
+  object-fit: cover;
+}
+
+.quadrado1 {
+  width: 500px;
+  height: 200px;
+  margin-top: 70px;
+  margin-left: 40px;
+  background-color: #D2E7AA;
+  color: #47232C;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text1 {
+  margin-left: 20px;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.quadrado2 {
+  width: 500px;
+  height: 200px;
+  margin-top: 70px;
+  margin-left: 40px;
+  background-color: #47232C;
+  color: #D2E7AA;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text2 {
+  margin-left: 20px;
+  font-size: 20px;
+  justify-content: center;
+}
